@@ -41,3 +41,7 @@
 // Explanation 1
 
 // The original array is . Reversed, it is .
+
+function reverseArray(a) {
+    return a.reverse()
+}
