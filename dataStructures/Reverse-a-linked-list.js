@@ -54,7 +54,7 @@ function reverse(llist) {
 
     while(current){
         let nextNode = current.next
-        current.next= prev// we change the poiner of current.next ti prev
+        current.next= prev// we change the poiner of current.next to prev
         prev= current //THIS ORDER IS IMPORTANT first prev then current
         current= nextNode 
     }
