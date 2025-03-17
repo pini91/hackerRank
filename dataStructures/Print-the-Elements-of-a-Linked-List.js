@@ -97,10 +97,10 @@
 //list.printList()
 
 function printLinkedList(head) {
-    current = head
-
-    while(current){
-        console.log(current.data)
-        current = current.next
-    }
+        let current = head
+    
+        while(current){
+            console.log(current.data)
+            current = current.next
+        }
 }
