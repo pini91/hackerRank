@@ -89,21 +89,11 @@
 
 
 function reversePrint(llist) {
-
-    // let current= llist
-
-    // let prev= null
-
-    // while(current){
-    //     let nextNode= current.next
-    //     current.next= prev   //here we change the pointer of current.
-    //     prev= current
-    //     current= nextNode
-    // }
-    // return prev
-
     if(llist){
         reversePrint(llist.next)
         console.log(llist.data)
     }
 }
+
+//his code uses recursion to traverse the linked list. The reversePrint function first checks if the current node head is valid. I
+//f it is, the function calls itself with the next node in the list (head.next). This continues until the end of the list is reached.
