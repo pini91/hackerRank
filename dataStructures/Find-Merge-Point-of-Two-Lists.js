@@ -79,13 +79,36 @@ function findMergeNode(headA, headB) {
         //in case the lists have different lengths are different sizes
         
         if(!current){
-            current= current2
+            current= headB
         }
         
         if(!current2){
-            current2= current
+            current2= headA
         }
     }
     
     return current.data
 }
+
+
+
+
+//////
+
+// let current= headA
+// let current2= headB
+
+// while(current!=current2){
+//     if(current.next==null){
+//         current=headB
+//     }else{
+//         current=current.next
+//     }
+    
+//     if(current2.next == null){
+//         current2= headA
+//     }else{
+//         current2= current2.next
+//     }
+// }
+// return current.data
