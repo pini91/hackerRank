@@ -174,6 +174,23 @@ function matchingStrings(stringList, queries) {
 
     console.log(result)
 
+    //MY OTHER ANSWER
+    // let dic={}
+
+
+    // for(let el of queries){
+    //   dic[el]=0
+    // }
+
+    // for(let i in dic){
+    //     for(let j=0; j<stringList.length; j++){
+    //         if(i === stringList[j]){
+    //             dic[i]++
+    //         }
+    //     }
+    // }
+    // console.log(Object.values(dic))
+
 
     //OR
     // const memory = {}
