@@ -67,4 +67,5 @@ function hasCycle(head) {
 
 
 
-// To detect a cycle in a linked list, the "Floyd's Cycle-Finding Algorithm," also known as the "tortoise and hare" algorithm, is commonly used. It involves two pointers, one moving slowly (tortoise) and the other moving faster (hare), through the linked list. If a cycle exists, the two pointers will eventually meet.
+// To detect a cycle in a linked list, the "Floyd's Cycle-Finding Algorithm," also known as the "tortoise and hare" algorithm, is commonly used. 
+//It involves two pointers, one moving slowly (tortoise) and the other moving faster (hare), through the linked list. If a cycle exists, the two pointers will eventually meet.
