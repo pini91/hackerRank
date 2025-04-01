@@ -50,24 +50,52 @@
 
 
 function levelOrder(root) {
-    if (!root) {
+
+     //moj
+
+     if (!root) {
         return;
     }
 
-    const queue = [root];
-    let result = "";
-
-    while (queue.length > 0) {
-        const currentNode = queue.shift();
-        result += currentNode.data + " ";
-
-        if (currentNode.left) {
-            queue.push(currentNode.left);
+    let queue= [root]
+    let result=[];
+  
+    while(queue.length>0){
+        let current= queue.shift()
+        
+        result.push(current.data)
+        
+        if(current.left){
+            queue.push(current.left)
         }
-        if (currentNode.right) {
-            queue.push(currentNode.right);
+        if(current.right){
+            queue.push(current.right)
         }
     }
+    
+    result = result.join(' ')
+    console.log(result)
 
-    console.log(result.trim());
+
+    
+    // if (!root) {
+    //     return;
+    // }
+
+    // const queue = [root];
+    // let result = "";
+
+    // while (queue.length > 0) {
+    //     const currentNode = queue.shift();
+    //     result += currentNode.data + " ";
+
+    //     if (currentNode.left) {
+    //         queue.push(currentNode.left);
+    //     }
+    //     if (currentNode.right) {
+    //         queue.push(currentNode.right);
+    //     }
+    // }
+
+    // console.log(result.trim());
 }
