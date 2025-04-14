@@ -88,7 +88,7 @@ function sortedInsert(llist, data) {
         newNode.prev= current
     }else{
         //insert at a specific position
-        //we grab the previous of the current
+        //we grab the previous of the current  we create a new variable to differenciate it.
         let previous= current.prev
         
         //we make changes for previous node
