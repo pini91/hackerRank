@@ -78,9 +78,6 @@ function compareTriplets(a, b) {
         a[i]<b[i]?bob++:a[i]>b[i]?alice++:alice+0 && bob+0
     }
 
-    // let aResult=alice.reduce((acc,el)=>acc+el)
-    // let bResult=bob.reduce((acc,el)=>acc+el)
-
     console.log([alice,bob])
 
 }
